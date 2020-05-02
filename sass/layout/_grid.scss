@@ -1,0 +1,56 @@
+$total-columns: 12;
+
+$breakpoints: (
+  xs: 0, 
+  sm: 48rem,
+  md: 64rem,
+  lg: 80rem,
+  xl: 90rem
+) !default;
+
+.container {
+    max-width: 120rem;
+    margin: auto;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+@mixin use-media($breakpoint) {
+    @if $breakpoint == 0 {
+        @content;
+    } @else {
+        @media (min-width: $breakpoint) {
+            @content;
+        }
+    }
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat($total-columns,1fr);
+    grid-template-rows:auto;
+    grid-gap: 1rem;
+
+    & > [class*=column-] {
+        margin:0;
+        max-width:100%
+        // display: block;
+    }
+}
+
+@include use-media(map-get($breakpoints, "lg")) {
+    .grid{
+        grid-gap: 1.5rem;
+    }
+}
+
+// Make grid system
+@each $name, $size in $breakpoints {
+    @include use-media($size) {
+        @for $i from 1 through $total-columns {
+            .col--#{$name}-#{$i} {
+              grid-column-start: span $i;
+            }
+        }
+    }
+}
