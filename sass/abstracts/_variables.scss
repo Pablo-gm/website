@@ -1,6 +1,42 @@
 // COLORS
+$color-primary: #3060FF;
+$color-primary-tint: #8BACFF;
+$color-primary-tint-light: #D3DFFF;
+$color-secondary: #FFCB32;
+$color-secondary-tint: #FFDE8B;
+$color-secondary-tint-light: #FFF3D3;
+$color-body: #444753;
+$color-text-dark: #0e1d4d;
+$color-background: #fafbff;
+$color-white: #FFFFFF;
 
 // FONT
-
+$font-base: 'Rubik', sans-serif;
 
 // GRID
+$total-columns: 12;
+
+$breakpoints: (
+  xs: 0, 
+  sm: 48rem,
+  md: 64rem,
+  lg: 76rem,
+  //xl: 90rem
+) !default;
+
+/*
+#FFDE8B
+#FFF3D3
+#8BACFF
+#D3DFFF
+#F9BA32
+#241436
+#7741B3
+#544c5e
+*/
+// ANIMATIONS
+$animation-linear: linear;
+$animation-easing-standard: cubic-bezier(0.4, 0, 0.2, 1);
+
+// SHADOWS
+$shadow-header: 0 0.125rem 0.3125rem rgba(0,0,0,.26);

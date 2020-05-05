@@ -1,16 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website Template</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    
+<header>
+  <div class="container display--flex">
+    <a href="#" class="brand">
+      <img src="https://via.placeholder.com/48.png" class="brand__logo">
+      <span class="brand__text">Pablo Gómez</span>
+    </a>
+    <nav class="navbar">
+      <ul class="navbar__list">
+        <li class="navbar__item"><a href="#" class="navbar__link navbar__link--active">Home</a></li>
+        <li class="navbar__item"><a href="#" class="navbar__link">Home</a></li>
+        <li class="navbar__item"><a href="#" class="navbar__link">Home</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 <style>.child { background-color: cadetblue; height: 3rem;}
+  .square{
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+  }
+  
 </style>
+<div class="container">
+  <section class="text--center space-vertical--lg">
+    <h1>Hi, I'm Pablo Gómez.</h1>
+    <p class="text--md">
+      I love to serve people by improving their lives<br>
+      throug meaningulf experiences.
+    </p>
+    <a href="#" class="text--md">Full Story</a>
+  </section>
+
+  <section class="space-vertical--lg text--center">
+    <p>Colors</p>
+    <div class="margin-bottom--md">
+      <span class="square background--primary"></span>
+      <span class="square background--primary-tint"></span>
+      <span class="square background--primary-tint-light"></span>
+    
+      <span class="square background--secondary"></span>
+      <span class="square background--secondary-tint"></span>
+      <span class="square background--secondary-tint-light"></span>
+    </div>
+  
+    <p>Buttons</p>
+    <a href="#" class="button">Button</a>
+    <a href="#" class="button button--text">Button text</a>
+  </section>
+
+</div>
+
 <div class="grid grid-gap-xs">
     <div class="child col--md-1"></div>
     <div class="child col--md-1"></div>

@@ -1,0 +1,42 @@
+.display{
+    &--flex{
+        display: flex;
+    }
+}
+
+.space{
+    &-vertical{
+        &--lg{
+            padding: 4rem 0;
+        }
+    }
+}
+
+.margin{
+    &-bottom{
+        &--md{
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.background{
+    &--primary{
+        background-color: $color-primary;
+    }
+    &--primary-tint{
+        background-color: $color-primary-tint;
+    }
+    &--primary-tint-light{
+        background-color: $color-primary-tint-light;
+    }
+    &--secondary{
+        background-color: $color-secondary;
+    }
+    &--secondary-tint{
+        background-color: $color-secondary-tint;
+    }
+    &--secondary-tint-light{
+        background-color: $color-secondary-tint-light;
+    }
+}

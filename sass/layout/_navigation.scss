@@ -1,0 +1,51 @@
+.brand {
+  display: flex;
+  margin-right: auto;
+  height: 4rem;
+
+  align-items: center;
+  &__logo {
+    display: inline-block;
+    margin-right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: $color-background;
+  }
+}
+
+.navbar {
+  display: flex;
+  margin-left: auto;
+  list-style: none;
+  line-height: 4rem;
+
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+  &__item {
+    display: inline-block;
+    margin: 0 .5rem;
+  }
+  &__link {
+    position: relative;
+    display: inline-block;
+    padding: 0 1rem;
+    color: $color-body;
+    font-weight: 500;
+    transition: all 250ms $animation-easing-standard;
+    &:hover {
+      color: $color-primary;
+    }
+    &--active:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: .25rem;
+      background-color: $color-primary;
+      content: '';
+    }
+  }
+}
