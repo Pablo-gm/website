@@ -7,9 +7,17 @@
   color: $color-white;
   font-size: 1.25rem;
   line-height: 2.25rem;
-  transition: all 200ms $animation-easing-standard;
+  transition: all 250ms $animation-easing-standard;
 
-  &--text {
+  &--tint{
+    color: $color-text-dark;
+    background-color: $color-primary-tint-light;
+    &:hover {
+      background-color: $color-primary-tint;
+    }
+  }
+
+  &--underline {
     padding: 0 .25rem;
     border-bottom: .25rem solid $color-primary-tint;
     border-radius: 0;

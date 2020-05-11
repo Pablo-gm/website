@@ -12,6 +12,10 @@
     border-radius: 50%;
     background-color: $color-background;
   }
+  &__text {
+    font-size: 1.125rem;
+    color: $color-text-dark;
+  }
 }
 
 .navbar {
@@ -34,6 +38,7 @@
     padding: 0 1rem;
     color: $color-body;
     font-weight: 500;
+    font-size: 1.125rem;
     transition: all 250ms $animation-easing-standard;
     &:hover {
       color: $color-primary;

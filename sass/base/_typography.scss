@@ -18,9 +18,11 @@ a {
     text-decoration: none;
     background-color: transparent;
     display: inline-block;
+}
 
-  
-    @include hover() {
-
+.link {
+    transition: box-shadow 200ms $animation-easing-standard;
+    @include hover-focus() {
+        box-shadow: 0 2px 0 $color-primary;
     }
 }

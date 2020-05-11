@@ -9,6 +9,63 @@
 #7741B3
 #544c5e
 */
+/*
+pitch.com 18px
+box-shadow: 0 0 1.8rem rgba(0,0,0,.15);
+
+item + hover
+0 .2rem .5rem rgba(103,110,144,.2),0 0 0 .1rem rgba(103,110,144,.05)
+0 .2rem .5rem rgba(103,110,144,.4),0 0 0 .1rem rgba(103,110,144,.05)
+
+
+mockupplus
+rgb(220, 220, 220) 0px 2px 10px
+
+Airbnb
+rgba(0, 0, 0, 0.18) 0px 1px 2px !important
+card
+rgba(0, 0, 0, 0.15) 0px 2px 8px !important
+
+
+trip advisor -- .2 maybe
+box-shadow: 0 0 8px rgba(0,0,0,.4);
+
+google keep
+header
+0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.2)
+card hover
+box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302),0 1px 3px 1px rgba(60,64,67,0.149);
+
+
+Facebook
+card shadow
+rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
+
+twitch
+--shadow-elevation-1: 0 1px 2px var(--color-opac-b-3),0 0px 2px var(--color-opac-b-2);
+
+--shadow-elevation-2: 0 4px 8px var(--color-opac-b-4),0 0px 4px var(--color-opac-b-1);
+
+--shadow-elevation-3: 0 6px 16px var(--color-opac-b-4),0 0px 4px var(--color-opac-b-1);
+
+--shadow-elevation-4: 0 12px 32px var(--color-opac-b-4),0 0px 8px var(--color-opac-b-1);
+
+--shadow-elevation-5: 0 32px 64px var(--color-opac-b-4),0 0px 16px var(--color-opac-b-1);
+
+--color-opac-b-1: rgba(0,0,0,0.05);
+
+--color-opac-b-10: rgba(0,0,0,0.7);
+
+--color-opac-b-11: rgba(0,0,0,0.75);
+
+--color-opac-b-12: rgba(0,0,0,0.8);
+
+--color-opac-b-13: rgba(0,0,0,0.85);
+
+--color-opac-b-14: rgba(0,0,0,0.9);
+
+--color-opac-b-15: rgba(0,0,0,0.95);
+*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -82,6 +139,11 @@ a {
   background-color: transparent;
   display: inline-block; }
 
+.link {
+  transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1); }
+  .link:hover, .link:focus {
+    box-shadow: 0 2px 0 #3060FF; }
+
 .display--flex {
   display: flex; }
 
@@ -118,14 +180,19 @@ a {
   color: #FFFFFF;
   font-size: 1.25rem;
   line-height: 2.25rem;
-  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1); }
-  .button--text {
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1); }
+  .button--tint {
+    color: #0e1d4d;
+    background-color: #D3DFFF; }
+    .button--tint:hover {
+      background-color: #8BACFF; }
+  .button--underline {
     padding: 0 .25rem;
     border-bottom: 0.25rem solid #8BACFF;
     border-radius: 0;
     background-color: transparent;
     color: #3060FF; }
-    .button--text:hover {
+    .button--underline:hover {
       border-bottom-color: #3060FF; }
 
 .container {
@@ -267,8 +334,10 @@ header {
   z-index: 400;
   height: 4rem;
   width: 100%;
-  background-color: #FFF;
-  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.26); }
+  background-color: #FFF; }
+
+.header--shadow {
+  box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.2); }
 
 .brand {
   display: flex;
@@ -282,6 +351,9 @@ header {
     height: 3rem;
     border-radius: 50%;
     background-color: #fafbff; }
+  .brand__text {
+    font-size: 1.125rem;
+    color: #0e1d4d; }
 
 .navbar {
   display: flex;
@@ -300,6 +372,7 @@ header {
     padding: 0 1rem;
     color: #444753;
     font-weight: 500;
+    font-size: 1.125rem;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1); }
     .navbar__link:hover {
       color: #3060FF; }
