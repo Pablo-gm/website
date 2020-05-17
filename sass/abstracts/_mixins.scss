@@ -1,3 +1,13 @@
+@mixin use-media($breakpoint) {
+  @if $breakpoint == 0 {
+      @content;
+  } @else {
+      @media (min-width: $breakpoint) {
+          @content;
+      }
+  }
+}
+
 
 @mixin hover() {
     &:hover { @content; }

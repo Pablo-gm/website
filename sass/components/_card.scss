@@ -1,0 +1,44 @@
+.card {
+    position: relative;
+    display: block;
+    border-radius: .25rem;
+    background-color: $color-white;
+    box-shadow: $shadow-card;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
+    
+    @include hover-focus() {
+        box-shadow: $shadow-card-hover;
+    }
+
+    &__image {
+        border-top-left-radius: .25rem;
+        border-top-right-radius: .25rem;
+        & img {
+        display: block;
+        width: 100%;
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+        }
+    }
+
+    &__title {
+        color: $color-text-dark;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+
+    &__content {
+        padding: 1rem;
+        font-size: .875rem;
+    }
+
+    &__actions{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        box-sizing: border-box;
+        //min-height: ;
+        padding: .5rem 1rem;
+    }
+}

@@ -5,16 +5,6 @@
     padding: 0 1rem;
 }
 
-@mixin use-media($breakpoint) {
-    @if $breakpoint == 0 {
-        @content;
-    } @else {
-        @media (min-width: $breakpoint) {
-            @content;
-        }
-    }
-}
-
 .grid{
     display:grid;
     grid-template-columns:repeat($total-columns,1fr);
@@ -26,6 +16,7 @@
         max-width:100%
         // display: block;
     }
+
 }
 
 @include use-media(map-get($breakpoints, "lg")) {
