@@ -1,14 +1,15 @@
 .brand {
   display: flex;
   margin-right: auto;
-  height: 4rem;
+  margin-left: auto;
+  height: 3rem;
 
   align-items: center;
   &__logo {
     display: inline-block;
     margin-right: 1rem;
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     background-color: $color-background;
   }
@@ -21,8 +22,9 @@
 .navbar {
   display: flex;
   margin-left: auto;
+  margin-right: auto;
   list-style: none;
-  line-height: 4rem;
+  line-height: 3rem;
 
   &__list {
     display: flex;
@@ -30,7 +32,7 @@
   }
   &__item {
     display: inline-block;
-    margin: 0 .5rem;
+    margin: 0;
   }
   &__link {
     position: relative;
@@ -67,6 +69,24 @@
         background-color: $color-primary !important;
         opacity: 1 !important;
       }
+    }
+  }
+}
+
+@include use-media(map-get($breakpoints, "md")) {
+  .brand {
+    height: 4rem;
+    margin-left: 0;
+    &__logo {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+  .navbar {
+    line-height: 4rem;
+    margin-right: 0;
+    &__item {
+      margin: 0 .5rem;
     }
   }
 }

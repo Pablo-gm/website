@@ -3,155 +3,116 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
+  <title>Pablo Gómez</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
+<style>.square{ width: 4rem; height: 4rem; display: inline-block;}</style>
 <body>
+  <div class="header__trigger"></div>
+  <header class="header">
+    <div class="container display--flex">
+      <a href="#" class="brand">
+        <img src="https://via.placeholder.com/48.png" class="brand__logo">
+        <span class="brand__text">Pablo Gómez</span>
+      </a>
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li class="navbar__item"><a href="#" class="navbar__link navbar__link--active">Work</a></li>
+          <li class="navbar__item"><a href="#" class="navbar__link">Projects</a></li>
+          <li class="navbar__item"><a href="#" class="navbar__link">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<div class="header__trigger"></div>
-<header class="header">
-  <div class="container display--flex">
-    <a href="#" class="brand">
-      <img src="https://via.placeholder.com/48.png" class="brand__logo">
-      <span class="brand__text">Pablo Gómez</span>
-    </a>
-    <nav class="navbar">
-      <ul class="navbar__list">
-        <li class="navbar__item"><a href="#" class="navbar__link navbar__link--active">Home</a></li>
-        <li class="navbar__item"><a href="#" class="navbar__link">Work</a></li>
-        <li class="navbar__item"><a href="#" class="navbar__link">Experiments</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-<style>.child { background-color: cadetblue; height: 3rem;}
-  .square{
-    display: inline-block;
-    width: 4rem;
-    height: 4rem;
-  }
-  
-</style>
-<div class="container">
-  <section class="text--center space-vertical--lg">
-    <h1>Hi, I'm Pablo Gómez.</h1>
-    <p class="text--md">
-      I love to serve people by improving their lives<br>
-      through meaningful experiences.
-    </p>
-    <a href="#" class="text--md link">Full Story</a>
-  </section>
-
-  <section class="space-vertical--lg text--center">
-    <p>Colors</p>
-    <div class="margin-bottom--md">
-      <span class="square background--primary"></span>
-      <span class="square background--primary-tint"></span>
-      <span class="square background--primary-tint-light"></span>
+  <div class="container">
+    <section class="text--center section--welcome">
+      <h1>Hi, I'm Pablo Gómez.<br> I am a UI Engineer.</h1>
+      <p class="text--lg margin-bottom--md">
+        I love to serve people by improving their lives<br>
+        through meaningful experiences.
+      </p>
+      <a href="#" class="text--md link">Full Story</a>
+    </section>
+    <!--
+    <section class="space-vertical--lg text--center">
+      <p>Colors</p>
+      <div class="margin-bottom--md">
+        <span class="square background--primary"></span>
+        <span class="square background--primary-tint"></span>
+        <span class="square background--primary-tint-light"></span>
+      
+        <span class="square background--secondary"></span>
+        <span class="square background--secondary-tint"></span>
+        <span class="square background--secondary-tint-light"></span>
+      </div>
     
-      <span class="square background--secondary"></span>
-      <span class="square background--secondary-tint"></span>
-      <span class="square background--secondary-tint-light"></span>
-    </div>
-  
-    <p>Buttons</p>
-    <a href="#" class="button">Button</a>
-    <a href="#" class="button button--tint">Button tint</a>
-    <a href="#" class="button button--underline">Underline</a>
-    <a href="#" class="button button--text">Text</a>
-  </section>
-
-  <div class="space-vertical--lg">
-    <div class="grid grid-gap-xs ">
-      <div class="col--md-4 col--xs-12">
-        <div class="card">
-          <figure class="card__image">
-            <img src="https://picsum.photos/450/300">
-          </figure>
-          <figcaption class="card__content">
-            <div class="card__title">
-              Some Card Title
+      <p>Buttons</p>
+      <a href="#" class="button">Button</a>
+      <a href="#" class="button button--tint">Button tint</a>
+      <a href="#" class="button button--underline">Underline</a>
+      <a href="#" class="button button--text">Text</a>
+    </section>
+    -->
+    <div class="">
+      <div class="grid grid-gap-xs ">
+        <div class="col--md-4 col--xs-12">
+          <div class="card">
+            <figure class="card__image">
+              <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" class="lazy-image" alt="Project 1" data-src="https://picsum.photos/450/300" />
+            </figure>
+            <figcaption class="card__content">
+              <div class="card__title">
+                Some Card Title
+              </div>
+              Some text here
+            </figcaption>
+            <div class="card__actions">
+              <a href="#" class="button button--tint">Demo</a>
             </div>
-            Some text here
-          </figcaption>
-          <div class="card__actions">
-            <a href="#" class="button button--tint">Demo</a>
           </div>
         </div>
-      </div>
-      <div class="col--md-4 col--xs-12">
-        <div class="card">
-          <figure class="card__image">
-            <img src="https://picsum.photos/450/300">
-          </figure>
-          <figcaption class="card__content">
-            <div class="card__title">
-              Some Card Title
+        <div class="col--md-4 col--xs-12">
+          <div class="card">
+            <figure class="card__image">
+              <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" class="lazy-image" alt="Project 2" data-src="https://picsum.photos/450/300" />
+            </figure>
+            <figcaption class="card__content">
+              <div class="card__title">
+                Some Card Title
+              </div>
+              Some text here
+            </figcaption>
+            <div class="card__actions">
+              <a href="#" class="button button--tint">Demo</a>
             </div>
-            Some text here
-          </figcaption>
-          <div class="card__actions">
-            <a href="#" class="button button--text" style="margin-left: -.5rem;">Demo</a>
           </div>
         </div>
-      </div>
-      <div class="col--md-4 col--xs-12">
-        <div class="card">
-          <figure class="card__image">
-            <img src="https://picsum.photos/450/300">
-          </figure>
-          <figcaption class="card__content">
-            <div class="card__title">
-              Some Card Title
+        <div class="col--md-4 col--xs-12">
+          <div class="card">
+            <figure class="card__image">
+              <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" class="lazy-image" alt="Project 3" data-src="https://picsum.photos/450/300" />
+            </figure>
+            <figcaption class="card__content">
+              <div class="card__title">
+                Some Card Title
+              </div>
+              Some text here
+            </figcaption>
+            <div class="card__actions">
+              <a href="#" class="button button--tint">Demo</a>
             </div>
-            Some text here
-          </figcaption>
-          <div class="card__actions">
-            <a href="#" class="button">Demo</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-
-</div>
-
-
-
-
-<div class="grid grid-gap-xs">
-    <div class="child col--md-1"></div>
-    <div class="child col--md-1"></div>
-    <div class="child col--md-1"></div>
-    <div class="child col--md-1"></div>
-    <div class="child col--md-1"></div>
-    <div class="child col--md-1"></div>
-    <div class="child col--md-1"></div>
-    <div class="child col--md-1"></div>
-    <div class="child col--md-1"></div>
-    <div class="child col--md-1"></div>
-    <div class="child col--md-1"></div>
-    <div class="child col--md-1"></div>
-    <div class="child col--md-2"></div>
-    <div class="child col--md-2"></div>
-    <div class="child col--md-2"></div>
-    <div class="child col--md-2"></div>
-    <div class="child col--md-2"></div>
-    <div class="child col--md-2"></div>
-    <div class="child col--md-3"></div>
-    <div class="child col--md-3"></div>
-    <div class="child col--md-3"></div>
-    <div class="child col--md-3"></div>
-    <div class="child col--md-4"></div>
-    <div class="child col--md-4"></div>
-    <div class="child col--md-4"></div>
-    <div class="child col--md-6"></div>
-    <div class="child col--md-6"></div>
-    <div class="child"></div>
-  </div>
-  
+  <footer>
+    <a href="#" class="button button--underline">Linkedin</a>
+    <a href="#" class="button button--underline">GitHub</a>
+  </footer>
   
   <script src="js/main.js"></script>
 </body>

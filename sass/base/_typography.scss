@@ -1,11 +1,16 @@
 h1 {
     font-size: 3.75rem;
     color: $color-text-dark;
+    line-height: 1.15;
+    margin-bottom: 1rem;
 }
 
 .text{
     &--md{
         font-size: 1.25rem;
+    }
+    &--lg{
+        font-size: 1.5rem;
     }
     &--center{
         text-align: center;

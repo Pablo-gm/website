@@ -1,0 +1,17 @@
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6rem;
+    margin-top: 1.5rem;
+    a{
+        margin: 0.5rem;
+    }
+}
+
+@include use-media(map-get($breakpoints, "md")) {
+    footer{
+        margin-top: 2rem;
+        height: 8rem;
+    }
+}

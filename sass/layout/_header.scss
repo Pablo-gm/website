@@ -2,9 +2,21 @@ header {
     position: sticky;
     top: 0;
     z-index: 400;
-    height: 4rem;
+    height: 6rem;
     width: 100%;
     background-color: #FFF;
+    .container {
+        flex-direction: column;
+    }
+}
+
+@include use-media(map-get($breakpoints, "md")) {
+    header{
+        height: 4rem;
+        .container {
+            flex-direction: row;
+        }
+    }
 }
 
 .header{

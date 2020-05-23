@@ -1,0 +1,13 @@
+.section{
+    &--welcome{
+        padding: 4rem 0;
+    }
+}
+
+@include use-media(map-get($breakpoints, "md")) {
+    .section{
+        &--welcome{
+            padding: 8rem 0;
+        }
+    }
+}
